@@ -8,3 +8,18 @@
 .doneTask{
     text-decoration: line-through;
 }
+
+li{
+    font-size: 1.5rem;
+}
+
+.remove{
+    display: none;
+}
+
+.fa-xmark{
+    color: red;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+}

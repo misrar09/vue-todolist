@@ -50,19 +50,24 @@ const vueApp = {
 
             listItem: 0,
 
+
         }
 
     },
 
     methods: { // methods with functions
+        removeItem(item) {
+            const index = this.toDoList.indexOf(item);
+            if (index) {  // if index is found in the arry (ture)
+              this.toDoList.splice(index, 1);
+            }
+          },
 
 
-    },
+        mounted() {
 
-    mounted() {
+        }
 
     }
-
 }
-
 createApp(vueApp).mount("#app");

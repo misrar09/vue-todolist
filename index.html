@@ -16,11 +16,10 @@
 If the "done" property is equal to true, display the ToDo text with a strikethrough -->
     <ul>
                                             
-        <li v-for="item in toDoList" :class="{'doneTask' :item.done}">{{item.text}}</li><!-- :item.done means if done object is tre then add the class otherwise no -->
+        <li v-for="item in toDoList" :class="{'doneTask' :item.done}">{{item.text}} <i @click="removeItem(item)" class="fa-solid fa-xmark"></i> </li><!-- :item.done means if done object is tre then add the class otherwise no -->
 
     </ul>
-    
-    
+      
 
 
 
