@@ -45,11 +45,12 @@ const vueApp = {
                     done: true,
                 },
 
-
             ],
 
             listItem: 0,
-
+            newTask:"",
+            errorMsg: false,
+            
 
         }
 
@@ -62,6 +63,26 @@ const vueApp = {
               this.toDoList.splice(index, 1);
             }
           },
+
+        addNewTask(){
+            if(this.newTask){
+                let addToDo = {
+                    text: this.newTask ,
+                    done: false ,
+                }
+                this.toDoList.push(addToDo);
+
+                this.errorMsg = false;
+            }
+            else{
+                this.errorMsg = true
+            }
+            
+            
+
+
+        },
+
 
 
         mounted() {
