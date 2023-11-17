@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>TO-DO LIST Vue JS</title>
+</head>
+<body>
+    
+    <h1>TO DO LIST</h1>
+    <div id="app">
+<!-- Print an item for each ToDo within an HTML list, displaying the text.
+If the "done" property is equal to true, display the ToDo text with a strikethrough -->
+    <ul>
+                                            
+        <li v-for="item in toDoList" :class="{'doneTask' :item.done}">{{item.text}}</li><!-- :item.done means if done object is tre then add the class otherwise no -->
+
+    </ul>
+    
+    
+
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
