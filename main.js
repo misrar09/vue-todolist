@@ -59,7 +59,7 @@ const vueApp = {
     methods: { // methods with functions
         removeItem(item) {
             const index = this.toDoList.indexOf(item);
-            if (index) {  // if index is found in the arry (ture)
+            if (index >= 0) {  // if index is found in the arry (true)
               this.toDoList.splice(index, 1);
             }
           },
@@ -73,6 +73,7 @@ const vueApp = {
                 this.toDoList.push(addToDo);
 
                 this.errorMsg = false;
+                this.newTask = "";
             }
             else{
                 this.errorMsg = true
