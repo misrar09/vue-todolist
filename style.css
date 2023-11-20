@@ -7,10 +7,14 @@
 
 .doneTask{
     text-decoration: line-through;
+    background-color: lightgreen;
 }
 
 li{
     font-size: 1.5rem;
+    background-color: lightblue;
+    padding-right: 1rem;
+    margin: 1.5rem;
 }
 
 .remove{
@@ -20,6 +24,29 @@ li{
 .fa-xmark{
     color: red;
     font-size: 1.5rem;
-    padding-left: 1rem;
+    margin-left: 2rem;
+    background-color: black;
 
+
+}
+
+label{
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    border: 2px solid orange;
+    margin-right: 1rem;
+}
+
+button{
+    width: 5rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: orange;
 }
