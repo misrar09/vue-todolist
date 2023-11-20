@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+h1{
+    text-align: center;
+    background-color: crimson;
+    background-color: wheat;
+}
+
 .doneTask{
     text-decoration: line-through;
     background-color: lightgreen;
@@ -30,6 +36,10 @@ li{
 
 }
 
+.addSection{
+    text-align: center;
+}
+
 label{
     margin-right: 1rem;
     font-weight: bold;
@@ -41,6 +51,7 @@ input{
     height: 2rem;
     border: 2px solid orange;
     margin-right: 1rem;
+    text-align: center;
 }
 
 button{

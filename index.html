@@ -20,7 +20,7 @@ If the "done" property is equal to true, display the ToDo text with a strikethro
 
     </ul>
     
-    <div>
+    <div class="addSection">
         <label for="task">New Task:</label>
         <input type="text" placeholder="insert a task" name="task" v-model="newTask" @keyup.enter="addNewTask()" >
         <button @click="addNewTask()" >Add</button>
