@@ -12,7 +12,6 @@
 // In addition to clicking on the button, also intercept the ENTER key to add the ToDo to the list (see documentation)
 // By clicking on the text of the item, invert the value of the done property of the corresponding todo (if done was equal to false, set true and vice versa)
 
-
 const { createApp } = Vue;
 
 const vueApp = {
@@ -30,11 +29,11 @@ const vueApp = {
                 },
                 {
                     text: "Go to the Gym",
-                    done: true,
+                    done: false,
                 },
                 {
                     text: "Take the lessons",
-                    done: true,
+                    done: false,
                 },
                 {
                     text: "Complete the assignment",
@@ -42,7 +41,7 @@ const vueApp = {
                 },
                 {
                     text: "Meeting with friends",
-                    done: true,
+                    done: false,
                 },
 
             ],
@@ -51,7 +50,6 @@ const vueApp = {
             newTask:"",
             errorMsg: false,
             
-
         }
 
     },
@@ -78,13 +76,8 @@ const vueApp = {
             else{
                 this.errorMsg = true
             }
-            
-            
-
 
         },
-
-
 
         mounted() {
 
